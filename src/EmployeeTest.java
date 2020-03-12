@@ -1,11 +1,12 @@
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class EmployeeTest {
 
-  @Test
+  @AfterTest
   public void testSalariedEmployee() {
     SalariedEmployee employee1 = new SalariedEmployee("ID123", "Petro", "SSN123");
     employee1.setFixedMonthlyPayment(2500);
