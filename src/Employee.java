@@ -31,7 +31,7 @@ public class Employee implements Payable{
 
     @Override
     public double calculatePay() {
-        return 0;
+        return getAverageMonthlySalary();
     }
 
     @Override
