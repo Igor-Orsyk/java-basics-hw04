@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class EmployeeTest {
 
-  @AfterTest
+  @Test
   public void testSalariedEmployee() {
     SalariedEmployee employee1 = new SalariedEmployee("ID123", "Petro", "SSN123");
     employee1.setFixedMonthlyPayment(2500);
